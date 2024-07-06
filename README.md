@@ -1,0 +1,3 @@
+# Image-captioning-with-GPT2
+
+This repo implements an image captoning model. GPT2 and CLIP are finetuned on flickr8k dataset. Pretrained CLIP model is used as image encoder and GPT2 is used as text decoder. Self attention layers of GPT2 are replaced with randomly initiliazed cross-attention layers in order to feed image vector coming from CLIP. The results of the resulting model are not great. This is due to low amount of data in flicker8k dataset. The model often makes mistakes but it captures the overall scene. You can check the inference notebook to see thre results. The goal of this repo is to demonstrate how to finetune GPT2 and CLIP to create an image captioning model. The notebooks are intended to run on Colab.
